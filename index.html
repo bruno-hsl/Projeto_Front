@@ -5,38 +5,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trabalho Frontend</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css" />
 </head>
 
 <body>
-    <nav class="navbar">
-        <a href="#" class="logo">MinhaLogo</a>
-        <ul class="nav-links">
-            <li><a href="#index.html">Home</a></li>
-            <li><a href="/pages/Sobre.html">Sobre</a></li>
-            <li><a href="/pages/servicos.html">Serviços</a></li>
-            <li><a href="/pages/projetos.html">Projetos</a></li>
-            <li><a href="/pages/contato.html">Contato</a></li>
-        </ul>
-    </nav>
+    <main>
 
-    <section class="banner">
-        <div class="banner-text">
-            <h1>Bem-vindo à Nossa Plataforma</h1>
-            <p>Explore soluções inovadoras para transformar sua experiência digital. Nossa equipe está pronta para
-                ajudar você a alcançar seus objetivos com tecnologia de ponta e suporte personalizado.</p>
-        </div>
-        <div class="banner-image">
-            <img src="https://via.placeholder.com/500x300.png?text=Sua+Imagem+Aqui" alt="Imagem ilustrativa">
+        <header class="header">
+            <div class="container">
+                <h1 class="logo">Meu Projeto</h1>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li><a href="index.html" class="nav__link active">Início</a></li>
+                        <li><a href="./pages/obras.html" class="nav__link">Obras</a></li>
+                        <li><a href="./pages/servicos.html" class="nav__link">Serviços</a></li>
+                        <li><a href="./pages/orcamento.html" class="nav__link">Orçamento</a></li>
+                        <li><a href="./pages/contato.html" class="nav__link">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section class="hero">
+            <div class="hero__content">
+                <h4 class="hero__subtitle">Construção inteligente</h4>
+                <h1 class="hero__title">Construindo casas da melhor forma</h1>
+                <div class="hero__divider"></div>
+            </div>
+            <div class="hero__image">
+                <img src="images/construindo-muro.png" alt="Imagem construindo muro" />
+            </div>
+        </section>
+    </main>
+
+    <section class="sobre">
+        <div class="sobre__container">
+            <div class="sobre__texto">
+                <h2 class="sobre__titulo">Quem sou eu</h2>
+                <p class="sobre__descricao">
+                    Sou tal tal tal com mais de 15 anos de experiência em construção e reformas. Trabalho com dedicação,
+                    responsabilidade e foco na qualidade. Atendo com pontualidade e ofereço soluções práticas para
+                    transformar seu projeto em realidade.
+                </p>
+            </div>
+            <div class="sobre__imagem">
+                <div class="shape">
+                    <img src="images/pedreiro.png" alt="Foto do pedreiro" />
+                </div>
+            </div>
         </div>
     </section>
 
+    <section class="servicos">
+        <div class="container">
+            <h2 class="servicos__titulo">Serviços que ofereço</h2>
+            <div class="servicos__grid">
+                <div class="servico__card">
+                    <span class="servico__icon">🏠</span>
+                    <h3>Construção de casas</h3>
+                </div>
+                <div class="servico__card">
+                    <span class="servico__icon">🔧</span>
+                    <h3>Reformas em geral</h3>
+                </div>
+                <div class="servico__card">
+                    <span class="servico__icon">🧱</span>
+                    <h3>Assentamento de pisos e azulejos</h3>
+                </div>
+                <div class="servico__card">
+                    <span class="servico__icon">🪵</span>
+                    <h3>Reboco e acabamento</h3>
+                </div>
+                <div class="servico__card">
+                    <span class="servico__icon">🛠️</span>
+                    <h3>Pequenos reparos</h3>
+                </div>
+            </div>
+            <div class="servicos__botao">
+                <a href="pages/servicos.html" class="btn">Ver todos os serviços</a>
+            </div>
+        </div>
+    </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+    <section class="imagem-destaque">
+        <div class="imagem-destaque__container">
+            <img src="images/construindo-muro.png" alt="Imagem de obra" />
+            <a href="pages/obras.html" class="btn btn--obras">Ver obras</a>
+        </div>
+    </section>
+
 </body>
 
 </html>

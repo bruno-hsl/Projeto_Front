@@ -1,0 +1,32 @@
+.btn {
+    display: inline-block;
+    background-color: #27466e;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    font-family: inherit;
+
+    &:hover {
+        background-color: #91b3e0;
+    }
+
+    &--large {
+        font-size: 1.2rem;
+        padding: 1rem 2rem;
+    }
+
+    &--outline {
+        background-color: transparent;
+        border: 2px solid #27466e;
+        color: #27466e;
+
+        &:hover {
+            background-color: #27466e;
+            color: #fff;
+        }
+    }
+}
