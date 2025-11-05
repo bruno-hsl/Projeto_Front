@@ -18,11 +18,12 @@
     }
 
     .logo {
-        font-size: 1.5rem;
-        font-weight: bold;
-        color: #000000;
+        height: 40px;         
+        width: auto;     
+        display: block;
+        padding: 5px 0;
     }
-
+      
     .nav__list {
         display: flex;
         gap: 2rem;

@@ -2,15 +2,20 @@
 
 .hero {
     display: flex;
-    align-items: center;
+    align-items: stretch; // garante que os filhos ocupem toda a altura da seção
     justify-content: space-between;
     background-color: #eef3fb;
-    min-height: auto;
+    padding: 0rem 0rem;
+    gap: 4rem;
 
     &__content {
         flex: 1;
-        padding-right: 2rem;
-        padding-left: 20rem;
+        max-width: 600px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 10rem;
     }
 
     &__subtitle {
@@ -18,32 +23,33 @@
         letter-spacing: 5px;
         text-transform: uppercase;
         font-weight: 400;
-        margin: 0 1px 0 0;
+        margin-bottom: 1rem;
         font-family: 'Oswald', sans-serif;
         color: $color-gray-500;
     }
 
     &__title {
-        font-size: 5rem;
-        line-height: 1.1;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        font-size: 4rem;
+        line-height: 1.2;
+        margin-bottom: 1.5rem;
         font-weight: 500;
         text-transform: uppercase;
-        width: 70%;
         font-family: 'Oswald', sans-serif;
         color: $color-black;
     }
 
     &__divider {
-        width: 300px;
-        height: 12px;
+        width: 200px;
+        height: 10px;
         background-color: #27466e;
     }
 
     &__image {
         flex: 1;
-        text-align: right;
+        max-width: 50%;
+        height: auto;
+        display: flex;
+        align-items: stretch;
 
         img {
             width: 100%;
@@ -53,6 +59,7 @@
         }
     }
 }
+
 
 
 .sobre {
@@ -173,23 +180,6 @@
         .servico__icon {
             font-size: 2.5rem;
             color: #91b3e0;
-        }
-    }
-
-    &__botao {
-        .btn {
-            display: inline-block;
-            background-color: #27466e;
-            color: #fff;
-            padding: 0.75rem 1.5rem;
-            border-radius: 4px;
-            font-weight: bold;
-            text-transform: uppercase;
-            transition: background-color 0.3s ease;
-
-            &:hover {
-                background-color: #91b3e0;
-            }
         }
     }
 }

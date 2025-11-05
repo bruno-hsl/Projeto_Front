@@ -1,0 +1,83 @@
+@import '../base/variables';
+
+.footer {
+    background-color: $color-gray-900;
+    color: $color-white;
+    padding: 4rem 2rem 2rem;
+
+    &__container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    &__info,
+    &__links,
+    &__contato {
+        flex: 1;
+        min-width: 250px;
+
+        h3, h4 {
+            font-family: $font-heading;
+            margin-bottom: 1rem;
+        }
+
+        p, a {
+            font-family: $font-base;
+            font-size: $font-size-sm;
+            color: #e0e0e0;
+        }
+
+        a {
+            text-decoration: none;
+
+            &:hover {
+                color: #91b3e0;
+            }
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+
+            li {
+                margin-bottom: 0.5rem;
+            }
+        }
+    }
+
+    &__redes {
+        margin-top: 1rem;
+
+        a {
+            margin-right: 0.5rem;
+            font-size: 1.5rem;
+            color: #fff;
+
+            &:hover {
+                color: #91b3e0;
+            }
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 0.5rem;
+        justify-content: center;
+        margin-top: 2rem;
+        font-size: $font-size-sm;
+        color: #ccc;
+
+        img {
+            width: 200px;
+        }
+    }
+
+    
+}

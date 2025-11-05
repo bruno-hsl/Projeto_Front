@@ -1,0 +1,70 @@
+.orcamento {
+    padding: $spacing-lg;
+    background-color: $color-gray-100;
+    margin: 15%;
+  
+    &__titulo {
+      text-align: center;
+      font-size: $font-size-xl;
+      font-family: $font-heading;
+      font-weight: $font-weight-bold;
+      margin-bottom: $spacing-md;
+      color: $color-gray-900;
+    }
+  
+    &__form {
+      background-color: $color-white;
+      padding: $spacing-md;
+      border-radius: $border-radius-lg;
+      box-shadow: $shadow-md;
+      display: flex;
+      flex-direction: column;
+      gap: $spacing-md;
+    }
+  
+    .form__grupo {
+      display: flex;
+      flex-direction: column;
+  
+      label {
+        margin-bottom: $spacing-xs;
+        font-weight: $font-weight-bold;
+        color: $color-gray-900;
+        font-size: $font-size-sm;
+      }
+  
+      input,
+      select,
+      textarea {
+        padding: $spacing-sm;
+        border: $border-width-thin solid $color-gray-300;
+        border-radius: $border-radius-md;
+        font-size: $font-size-md;
+        background-color: $color-white;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  
+        &:focus {
+          border-color: $color-primary;
+          box-shadow: 0 0 0 3px rgba($color-primary, 0.2);
+          outline: none;
+        }
+      }
+    }
+  
+    .btn {
+      align-self: flex-start;
+      background-color: $color-primary;
+      color: $color-white;
+      padding: $spacing-sm $spacing-md;
+      border-radius: $border-radius-md;
+      font-size: $font-size-md;
+      font-weight: $font-weight-bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  
+      &:hover {
+        background-color: darken($color-primary, 10%);
+      }
+    }
+  }
+  

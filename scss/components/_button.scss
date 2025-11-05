@@ -1,21 +1,25 @@
+@import '../base/variables';
+
 .btn {
     display: inline-block;
     background-color: #27466e;
     color: #fff;
     padding: 0.75rem 1.5rem;
-    border-radius: 4px;
-    font-weight: bold;
+    border-radius: 3rem;
+    font-weight: $font-weight-bold;
     text-transform: uppercase;
     transition: background-color 0.3s ease;
     text-decoration: none;
-    font-family: inherit;
+    font-family: $font-base;
+    letter-spacing: 3px;
+    font-style: initial;
 
     &:hover {
-        background-color: #91b3e0;
+        background-color: $color-black;
     }
 
     &--large {
-        font-size: 1.2rem;
+        font-size: 0.875rem;
         padding: 1rem 2rem;
     }
 

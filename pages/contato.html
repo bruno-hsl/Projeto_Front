@@ -2,29 +2,94 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trabalho Frontend</title>
-    <link rel="stylesheet" href="../css/main.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contato | CJ Reforma</title>
+  <link rel="stylesheet" href="../css/main.css" />
 </head>
 
 <body>
-    <main>
+  <header class="header">
+    <div class="container">
+      <a href="../index.html"><img class="logo" src="../images/cjreforma.png" alt="Logo CJ Reforma" style="height: 40px;" /></a>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a href="../index.html" class="nav__link">Início</a></li>
+          <li><a href="obras.html" class="nav__link">Obras</a></li>
+          <li><a href="servicos.html" class="nav__link">Serviços</a></li>
+          <li><a href="orcamento.html" class="nav__link">Orçamento</a></li>
+          <li><a href="contato.html" class="nav__link active">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-        <header class="header">
-            <div class="container">
-                <h1 class="logo">Meu Projeto</h1>
-                <nav class="nav">
-                    <ul class="nav__list">
-                        <li><a href="../index.html" class="nav__link">Início</a></li>
-                        <li><a href="./obras.html" class="nav__link">Obras</a></li>
-                        <li><a href="./servicos.html" class="nav__link">Serviços</a></li>
-                        <li><a href="./orcamento.html" class="nav__link">Orçamento</a></li>
-                        <li><a href="./contato.html" class="nav__link active">Contato</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+  <main>
+    <section class="hero">
+      <div class="hero__content">
+        <h4 class="hero__subtitle">Fale conosco</h4>
+        <h1 class="hero__title">Entre em contato</h1>
+        <div class="hero__divider"></div>
+      </div>
+      <div class="hero__image">
+        <img src="../images/construindo-muro.png" alt="Imagem de contato" />
+      </div>
+    </section>
+
+    <section class="contato">
+      <div class="container">
+        <h2 class="contato__titulo">Envie sua mensagem</h2>
+        <form class="contato__form">
+          <div class="form__grupo">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" required />
+          </div>
+          <div class="form__grupo">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form__grupo">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__info">
+        <h3 class="footer__logo">CJ Reforma</h3>
+        <p class="footer__descricao">Construindo com qualidade e confiança há mais de 15 anos.</p>
+      </div>
+      <div class="footer__links">
+        <h4>Links úteis</h4>
+        <ul>
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="orcamento.html">Orçamento</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+      <div class="footer__contato">
+        <h4>Contato</h4>
+        <p>📞 (61) 99999-9999</p>
+        <p>📧 contato@meuprojeto.com</p>
+        <div class="footer__redes">
+          <a href="#"><span>🔗</span></a>
+          <a href="#"><span>📘</span></a>
+          <a href="#"><span>📸</span></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; 2025. Todos os direitos reservados.</p>
+      <p>Desenvolvido por <a href="#">Daniel Fernandes</a> & <a href="#">Bruno Henrique</a></p>
+      <img src="../images/catolica-de-brasilia.svg" alt="Logo Universidade Católica de Brasília" />
+    </div>
+  </footer>
 </body>
 
 </html>

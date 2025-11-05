@@ -9,22 +9,22 @@
 </head>
 
 <body>
-    <main>
+    <header class="header">
+        <div class="container">
+            <a href=""><img class="logo" src="images/cjreforma.png" style="width: 40px;"></a>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link active">Início</a></li>
+                    <li><a href="./pages/obras.html" class="nav__link">Obras</a></li>
+                    <li><a href="./pages/servicos.html" class="nav__link">Serviços</a></li>
+                    <li><a href="./pages/orcamento.html" class="nav__link">Orçamento</a></li>
+                    <li><a href="./pages/contato.html" class="nav__link">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-        <header class="header">
-            <div class="container">
-                <h1 class="logo">Meu Projeto</h1>
-                <nav class="nav">
-                    <ul class="nav__list">
-                        <li><a href="index.html" class="nav__link active">Início</a></li>
-                        <li><a href="./pages/obras.html" class="nav__link">Obras</a></li>
-                        <li><a href="./pages/servicos.html" class="nav__link">Serviços</a></li>
-                        <li><a href="./pages/orcamento.html" class="nav__link">Orçamento</a></li>
-                        <li><a href="./pages/contato.html" class="nav__link">Contato</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+    <main>
 
         <section class="hero">
             <div class="hero__content">
@@ -36,63 +36,100 @@
                 <img src="images/construindo-muro.png" alt="Imagem construindo muro" />
             </div>
         </section>
+
+        <section class="sobre">
+            <div class="sobre__container">
+                <div class="sobre__texto">
+                    <h2 class="sobre__titulo">Quem sou eu</h2>
+                    <p class="sobre__descricao">
+                        Sou tal tal tal com mais de 15 anos de experiência em construção e reformas. Trabalho com
+                        dedicação,
+                        responsabilidade e foco na qualidade. Atendo com pontualidade e ofereço soluções práticas para
+                        transformar seu projeto em realidade.
+                    </p>
+                </div>
+                <div class="sobre__imagem">
+                    <div class="shape">
+                        <img src="images/pedreiro.png" alt="Foto do pedreiro" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="servicos">
+            <div class="container">
+                <h2 class="servicos__titulo">Serviços que ofereço</h2>
+                <div class="servicos__grid">
+                    <div class="servico__card">
+                        <span class="servico__icon">🏠</span>
+                        <h3>Construção de casas</h3>
+                    </div>
+                    <div class="servico__card">
+                        <span class="servico__icon">🔧</span>
+                        <h3>Reformas em geral</h3>
+                    </div>
+                    <div class="servico__card">
+                        <span class="servico__icon">🧱</span>
+                        <h3>Assentamento de pisos e azulejos</h3>
+                    </div>
+                    <div class="servico__card">
+                        <span class="servico__icon">🪵</span>
+                        <h3>Reboco e acabamento</h3>
+                    </div>
+                    <div class="servico__card">
+                        <span class="servico__icon">🛠️</span>
+                        <h3>Pequenos reparos</h3>
+                    </div>
+                </div>
+                <div class="servicos__botao">
+                    <a href="pages/servicos.html" class="btn">Ver todos os serviços</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="imagem-destaque">
+            <div class="imagem-destaque__container">
+                <img src="images/construindo-muro.png" alt="Imagem de obra" />
+                <a href="pages/obras.html" class="btn btn--obras">Ver obras</a>
+            </div>
+        </section>
+
     </main>
 
-    <section class="sobre">
-        <div class="sobre__container">
-            <div class="sobre__texto">
-                <h2 class="sobre__titulo">Quem sou eu</h2>
-                <p class="sobre__descricao">
-                    Sou tal tal tal com mais de 15 anos de experiência em construção e reformas. Trabalho com dedicação,
-                    responsabilidade e foco na qualidade. Atendo com pontualidade e ofereço soluções práticas para
-                    transformar seu projeto em realidade.
-                </p>
-            </div>
-            <div class="sobre__imagem">
-                <div class="shape">
-                    <img src="images/pedreiro.png" alt="Foto do pedreiro" />
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section class="servicos">
-        <div class="container">
-            <h2 class="servicos__titulo">Serviços que ofereço</h2>
-            <div class="servicos__grid">
-                <div class="servico__card">
-                    <span class="servico__icon">🏠</span>
-                    <h3>Construção de casas</h3>
-                </div>
-                <div class="servico__card">
-                    <span class="servico__icon">🔧</span>
-                    <h3>Reformas em geral</h3>
-                </div>
-                <div class="servico__card">
-                    <span class="servico__icon">🧱</span>
-                    <h3>Assentamento de pisos e azulejos</h3>
-                </div>
-                <div class="servico__card">
-                    <span class="servico__icon">🪵</span>
-                    <h3>Reboco e acabamento</h3>
-                </div>
-                <div class="servico__card">
-                    <span class="servico__icon">🛠️</span>
-                    <h3>Pequenos reparos</h3>
-                </div>
-            </div>
-            <div class="servicos__botao">
-                <a href="pages/servicos.html" class="btn">Ver todos os serviços</a>
-            </div>
-        </div>
-    </section>
 
-    <section class="imagem-destaque">
-        <div class="imagem-destaque__container">
-            <img src="images/construindo-muro.png" alt="Imagem de obra" />
-            <a href="pages/obras.html" class="btn btn--obras">Ver obras</a>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__info">
+                <h3 class="footer__logo">Meu Projeto</h3>
+                <p class="footer__descricao">Construindo com qualidade e confiança há mais de 15 anos.</p>
+            </div>
+            <div class="footer__links">
+                <h4>Links úteis</h4>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="./pages/servicos.html">Serviços</a></li>
+                    <li><a href="./pages/orcamento.html">Orçamento</a></li>
+                    <li><a href="./pages/contato.html">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer__contato">
+                <h4>Contato</h4>
+                <p>📞 (61) 99999-9999</p>
+                <p>📧 contato@meuprojeto.com</p>
+                <div class="footer__redes">
+                    <a href="#"><span>🔗</span></a>
+                    <a href="#"><span>📘</span></a>
+                    <a href="#"><span>📸</span></a>
+                </div>
+            </div>
         </div>
-    </section>
+        <div class="footer__bottom">
+            <p>&copy; 2025. Todos os direitos reservados.</p>
+            <p>Desenvolvido por <a href="">Daniel Fernandes</a> & <a href="">Bruno Henrique</a></p>
+            <img src="images/catolica-de-brasilia.svg" alt="Logo Universidade Católica de Brasília">
+        </div>
+    </footer>
 
 </body>
 

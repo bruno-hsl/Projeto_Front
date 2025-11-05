@@ -1,6 +1,9 @@
 @import 'base/variables';
 
-@import 'pages/home';
 @import 'components/header';
+@import 'components/footer';
 @import 'components/button';
-@import 'pages/home'
+@import 'components/form';
+
+@import 'pages/home';
+@import 'pages/obras';
