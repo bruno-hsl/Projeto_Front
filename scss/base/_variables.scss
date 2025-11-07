@@ -1,6 +1,6 @@
-@import 'reset';
-@import 'colors';
-@import 'typography';
-@import 'spacing';
-@import 'borders';
-@import 'shadows';
+@forward 'reset';
+@forward 'colors';
+@forward 'typography';
+@forward 'spacing';
+@forward 'borders';
+@forward 'shadows';

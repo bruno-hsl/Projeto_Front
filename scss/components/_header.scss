@@ -18,12 +18,11 @@
     }
 
     .logo {
-        height: 40px;         
-        width: auto;     
+        height: auto; 
+        width: 80px; 
         display: block;
-        padding: 5px 0;
     }
-      
+
     .nav__list {
         display: flex;
         gap: 2rem;
@@ -35,6 +34,7 @@
         font-weight: 500;
         position: relative;
         transition: color 0.3s ease;
+        font-family: inherit;
 
         &:hover {
             color: #91b3e0;

@@ -1,4 +1,5 @@
-@import '../base/variables';
+@use '../base/variables' as *;
+
 
 .footer {
     background-color: $color-gray-900;

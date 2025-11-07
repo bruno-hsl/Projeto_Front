@@ -1,9 +1,11 @@
-@import 'base/variables';
+// main.scss
+@use 'base/variables' as *; // importa tudo de base/_index.scss sem namespace
 
-@import 'components/header';
-@import 'components/footer';
-@import 'components/button';
-@import 'components/form';
+@use 'components/header';
+@use 'components/footer';
+@use 'components/button';
 
-@import 'pages/home';
-@import 'pages/obras';
+@use 'pages/home';
+@use 'pages/obras';
+@use 'pages/servicos';
+@use 'pages/contato';
