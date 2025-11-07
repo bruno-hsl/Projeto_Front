@@ -1,5 +1,4 @@
-// main.scss
-@use 'base/variables' as *; // importa tudo de base/_index.scss sem namespace
+@use 'base/variables' as *; 
 
 @use 'components/header';
 @use 'components/footer';
@@ -9,3 +8,4 @@
 @use 'pages/obras';
 @use 'pages/servicos';
 @use 'pages/contato';
+@use 'pages/orcamento';

@@ -1,0 +1,43 @@
+@use '../base/variables' as *;
+
+.orcamento {
+    background-color: #eef3fb;
+    padding: 4rem 2rem;
+  
+    &__titulo {
+      font-size: 3rem;
+      margin-bottom: 2rem;
+      text-align: center;
+      color: $color-black;
+      font-family: $font-heading;
+      font-weight: $font-weight-regular;
+    }
+  
+    form {
+      display: grid;
+      gap: 1rem;
+      max-width: 500px;
+      margin: 0 auto;
+  
+      label {
+        font-weight: bold;
+        color: $color-gray-500;
+      }
+  
+      input,
+      select {
+        padding: 0.5rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+  
+    }
+  
+    &__resultado {
+      margin-top: 2rem;
+      text-align: center;
+      font-size: 1.2rem;
+      color: $color-black;
+    }
+  }
+  

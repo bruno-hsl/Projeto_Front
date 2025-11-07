@@ -1,14 +1,14 @@
 @use '../base/variables' as *;
 
 .obras {
-    background-color: #f9f9f9;
+    background-color: #27466e;
     padding: 6rem 10rem;
     text-align: center;
 
     &__titulo {
         font-size: 3.75rem;
         font-family: $font-heading;
-        color: $color-black;
+        color: $color-white;
         margin-bottom: 2rem;
         font-weight: $font-weight-regular;
     }
@@ -23,7 +23,7 @@
 
     &__fundo {
         position: absolute;
-        background-color: #27466e;
+        background-color: $color-white;
         width: 70%;
         height: 100%;
         max-height: 500px;
