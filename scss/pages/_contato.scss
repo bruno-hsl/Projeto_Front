@@ -6,6 +6,7 @@
   background-color: #eef3fb;
   padding: 4rem 2rem;
 
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -100,6 +101,82 @@
     &__content,
     &__form {
       max-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .contato-hero {
+    flex-direction: column;
+    gap: 3rem;
+    padding: 3rem 1.5rem;
+
+    &__content,
+    &__form {
+      max-width: 100%;
+    }
+
+    &__title {
+      font-size: 2.5rem;
+    }
+
+    &__subtitle {
+      font-size: 1.2rem;
+      letter-spacing: 3px;
+    }
+
+    &__divider {
+      width: 150px;
+      height: 8px;
+    }
+
+    .contato__form {
+      padding: 1.5rem;
+
+      .form__grupo {
+        input,
+        textarea {
+          font-size: 0.95rem;
+        }
+
+        label {
+          font-size: 0.95rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .contato-hero {
+    padding: 5rem 1rem;
+
+    &__title {
+      font-size: 2rem;
+    }
+
+    &__subtitle {
+      font-size: 1rem;
+    }
+
+    &__divider {
+      width: 100px;
+      height: 6px;
+    }
+
+    .contato__form {
+      padding: 1rem;
+
+      .form__grupo {
+        input,
+        textarea {
+          font-size: 0.9rem;
+        }
+
+        label {
+          font-size: 0.9rem;
+        }
+      }
     }
   }
 }

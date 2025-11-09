@@ -1,8 +1,9 @@
 @use '../base/variables' as *;
+
 .servicos-page {
-    height: 100vh;
     padding: 0rem 2rem;
     text-align: center;
+
 
     &__titulo {
         font-size: 5.75rem;
@@ -64,5 +65,58 @@
 @media (max-width: 600px) {
     .servicos-page__grid {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 992px) {
+    .servicos-page {
+        padding: 2rem 1rem;
+
+        &__titulo {
+            font-size: 3.5rem;
+        }
+
+        &__descricao {
+            font-size: 1rem;
+            margin-bottom: 2rem;
+        }
+    }
+
+    .servico-card {
+        padding: 1rem;
+
+        &__icon {
+            font-size: 2.5rem;
+        }
+
+        h3 {
+            font-size: 1rem;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .servicos-page {
+        padding: 2rem 1rem;
+
+        &__titulo {
+            font-size: 2.5rem;
+        }
+
+        &__descricao {
+            font-size: 0.95rem;
+        }
+    }
+
+    .servico-card {
+        padding: 0.75rem;
+
+        &__icon {
+            font-size: 2rem;
+        }
+
+        h3 {
+            font-size: 0.95rem;
+        }
     }
 }

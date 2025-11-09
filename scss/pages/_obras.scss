@@ -60,3 +60,35 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+  .obras {
+    padding: 4rem 1rem;
+
+    &__titulo {
+      font-size: 2.5rem;
+    }
+
+    &__fundo-wrapper {
+      flex-direction: column;
+    }
+
+    &__fundo {
+      width: 100%;
+      max-height: none;
+      height: auto;
+    }
+
+    &__grid {
+      grid-template-columns: 1fr;
+      padding: 1rem;
+      gap: 1.5rem;
+    }
+
+    .obra__item {
+      img {
+        border-radius: 8px;
+      }
+    }
+  }
+}
