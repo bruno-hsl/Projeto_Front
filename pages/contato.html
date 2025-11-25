@@ -32,6 +32,19 @@
   </header>
 
   <main>
+
+    <section class="contato-intro-section">
+    <div class="contato-intro">
+      <div class="container1">
+        <h2 class="contato-intro__title">Estamos prontos para ajudar você!</h2>
+        <p class="contato-intro__description">Entre em contato conosco para discutir seu projeto ou solicitar um orçamento personalizado.</p>
+      </div>
+      <div class="container2">
+        <img src="/images/contato.png" alt="">
+      </div>
+    </div>
+    </section>
+
     <section class="contato-hero">
       <div class="contato-hero__content">
         <h4 class="contato-hero__subtitle">Fale conosco</h4>
@@ -40,7 +53,12 @@
       </div>
 
       <div class="contato-hero__form">
-        <form class="contato__form">
+        <!-- Formulário configurado para FormSubmit (envia para o e-mail sem backend) -->
+        <form class="contato__form" action="https://formsubmit.co/bruno.hsl.077@gmail.com" method="POST">
+          <!-- _captcha=false desativa o reCAPTCHA (opcional) -->
+          <input type="hidden" name="_captcha" value="false">
+          <!-- Assunto do e-mail recebido -->
+          <input type="hidden" name="_subject" value="Novo contato do site CJ Reforma">
           <div class="form__grupo">
             <label for="nome">Nome</label>
             <input type="text" id="nome" name="nome" required />
@@ -80,8 +98,8 @@
       </div>
       <div class="footer__contato">
         <h4>Contato</h4>
-        <p>📞 (61) 99999-9999</p>
-        <p>📧 contato@meuprojeto.com</p>
+        <p>📞 (61) 9-9995-1594</p>
+        <p>📧 claudiohenrique39@gmail.com</p>
         <div class="footer__redes">
           <a href="#"><span>🔗</span></a>
           <a href="#"><span>📘</span></a>
